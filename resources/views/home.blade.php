@@ -19,20 +19,31 @@
             </style>
         @endif
     </head>
-<body>
+<body class="bg-fuchsia-50">
     @include('layouts.navigation')
-    <hero>
-        <div>
-            <h1>Hoppin' Deals</h1>
+    <main class="min-h-screen">
+    <div class="py-12">
+        <div class="text-center">
+            <h1 class="text-4xl font-bold mb-6">Hoppin' Deals</h1>
+            <img class="mx-auto" src="https://static.wikia.nocookie.net/omori/images/d/d2/ForestBunny_%28Large%29.gif" alt="bunny">
         </div>
-    </hero>
-    <section>
-        <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, tenetur consectetur? Rem blanditiis praesentium nihil dolorum! Quae ducimus, numquam ea, ad nisi quasi repellendus atque totam voluptatibus aperiam optio quas.
+    </div>
+    <section class="flex flex-col lg:flex-row h-[66vh]">
+        <div class="lg:w-2/4 flex flex-col items-end justify-center flex-center p-8">
+            <p class="text-lg leading-relaxed max-w-96">
+                Your go-to online shop for buying bunnies and everything they need!
+                We offer you a fast, easy, and secure shopping experience. If you're
+                looking for a new furry friend or products to pamper your rabbit,
+                you've come to the right place!
+            </p>
+            <form action="">
+                <button class="rounded-full border-2 bg-slate-800 p-3 text-white">See our bunnies</button>
+            </form>
         </div>
-        <div>
-            <img src="https://static.wikia.nocookie.net/omori/images/c/c5/Forest_Bunny_%28Neutral%29.gif" alt="bunny">
+        <div class="lg:w-2/4 flex items-start justify-center flex-col p-8">
+            <img class="max-w-full h-auto" src="https://static.wikia.nocookie.net/omori/images/c/c5/Forest_Bunny_%28Neutral%29.gif" alt="bunny">
         </div>
     </section>
+    </main>
 </body>
 </html>

@@ -21,6 +21,30 @@
     </head>
 <body>
     @include('layouts.navigation')
-    <h1>Bunnies</h1>
+    <h1 class="text-3xl text-center my-6">Bunnies</h1>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img class="w-full h-96 object-cover" src="https://static.wikia.nocookie.net/omori/images/2/28/Rabbit%3F_%28Neutral%29.gif" alt="Bunny 1">
+            <div class="p-12">
+                <h2 class="text-xl font-semibold">Real Rabbit</h2>
+                <p class="text-gray-600 mt-2">A cute and fluffy bunny that loves to play!</p>
+            </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img class="w-full h-96 object-cover" src="https://static.wikia.nocookie.net/omori/images/c/c6/Cupcake_Bunny_%28Neutral%29.gif" alt="Bunny 2">
+            <div class="p-12">
+                <h2 class="text-xl font-semibold">Cupcake Bunny</h2>
+                <p class="text-gray-600 mt-2">An adorable bunny with a gentle personality.</p>
+            </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img class="w-full h-96 object-cover" src="https://static.wikia.nocookie.net/omori/images/0/03/Snow_Bunny_%28Neutral%29.gif" alt="Bunny 3">
+            <div class="p-12">
+                <h2 class="text-xl font-semibold">Snow Bunny</h2>
+                <p class="text-gray-600 mt-2">A playful bunny that enjoys hopping around!</p>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
